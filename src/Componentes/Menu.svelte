@@ -1,4 +1,5 @@
 <script>
+	import Inicio from './../Principal/UsuarioFinal/Inicio.svelte';
 
 </script>
 
@@ -12,10 +13,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="!#">Home</a>
+                <a class="nav-link active" aria-current="page" href="!#">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="!#">Link</a>
+                <a class="nav-link" href="!#">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="!#">TRATAMIENTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="!#">DENTISTAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="!#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="!#">CONTÁCTANOS</a>
               </li>
               
             </ul>
@@ -43,4 +56,13 @@
         background-color:#5EBCD6; 
         color: white;
     }
+
+   
+
+    /* HOVER DEL nav-item a */
+    .navbar-nav .nav-item.active a,
+  .navbar-nav .nav-item:hover a {
+    color: #5EBCD6; /* Color de texto al seleccionar o pasar el ratón por encima */
+    border-bottom: 2px solid #5EBCD6; /* Borde inferior al seleccionar o pasar el ratón por encima */
+  }
 </style>
