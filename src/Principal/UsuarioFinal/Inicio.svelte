@@ -27,12 +27,7 @@ import BannerTratamiento from "../../Banners/BannerTratamiento.svelte";
     <div class="nuestroEquipo">
       <h1>NUESTRO EQUIPO</h1>
       <h2>Dentistas de Primeras</h2>
-      <h2>Dentistas de Primeras</h2>
-      <h2>Dentistas de Primeras</h2>
-      <h2>Dentistas de Primeras</h2>
-      <h2>Dentistas de Primeras</h2>
-      <h2>Dentistas de Primeras</h2>
-      <h2>Dentistas de Primeras</h2>
+      <p>En <strong>La Clínica Dental</strong> disponemos de un equipo profecional de dentistas altamente calificados, comprometidos en ofrecerte un servicio de calidad con tecnología avanzada.</p>
     </div>
 </main>
 
@@ -59,7 +54,10 @@ import BannerTratamiento from "../../Banners/BannerTratamiento.svelte";
     width: 70%;
     border-bottom: 2px solid #5EBCD6;
   }
-   /* @media screen and (min-width: 960px) {
+  .tratamientos p {
+    font-size: 20px;
+  }
+  /* @media screen and (min-width: 960px) {
      .tratamientos {
        flex-direction: row;
        justify-content: space-around;
@@ -99,8 +97,20 @@ import BannerTratamiento from "../../Banners/BannerTratamiento.svelte";
     flex-direction: column;
     gap: 3px;
     height: 30vh;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     flex-wrap: wrap;
+  }
+
+  .nuestroEquipo h1{
+    font-size: 40px;
+  }
+  .nuestroEquipo h2{
+    text-align: center;
+    width: 70%;
+    border-bottom: 2px solid #5EBCD6;
+  }
+  .nuestroEquipo p {
+    font-size: 20px;
   }
   
 </style>
