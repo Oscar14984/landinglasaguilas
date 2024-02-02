@@ -20,19 +20,16 @@
     /* COLOR QUE SE USARA EN LA PARTE DE DERECHOS RESERVADOS #192135 */
     footer{
         background-color: #2D3549;
-        position: fixed;
+        /* position: fixed; */
         left: 0;
         bottom: 0;
         width: 100%;
         color: white;
-        /* text-align: center; */
     }
 
     /* GRID DEL FOOTER */
     .gridContainer{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        
-        
     }
 </style>

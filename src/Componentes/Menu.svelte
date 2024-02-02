@@ -65,4 +65,15 @@
     color: #5EBCD6; /* Color de texto al seleccionar o pasar el ratón por encima */
     border-bottom: 2px solid #5EBCD6; /* Borde inferior al seleccionar o pasar el ratón por encima */
   }
+
+  .navbar-expand-lg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(149, 230, 255, 0.3);
+    /* color: white; */
+    text-align: center;
+    z-index: 1;
+  }
 </style>
