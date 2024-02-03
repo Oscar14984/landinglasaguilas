@@ -1,6 +1,7 @@
 <script>
 import Banners from "../../Banners/Banners.svelte";
 import BannerTratamiento from "../../Banners/BannerTratamiento.svelte";
+import BannerEquiDoc from "../../Banners/BannerEquiDoc.svelte";
 </script>
 
 <main>
@@ -29,6 +30,8 @@ import BannerTratamiento from "../../Banners/BannerTratamiento.svelte";
       <h2>Dentistas de Primeras</h2>
       <p>En <strong>La Clínica Dental</strong> disponemos de un equipo profecional de dentistas altamente calificados, comprometidos en ofrecerte un servicio de calidad con tecnología avanzada.</p>
     </div>
+    <!-- BANNER DEL EQUIPO DE DOCTORES -->
+    <BannerEquiDoc />
 </main>
 
 <style>
