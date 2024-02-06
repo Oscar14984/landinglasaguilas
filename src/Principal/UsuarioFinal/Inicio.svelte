@@ -67,10 +67,37 @@ import Mapa from "../../Componentes/Mapa.svelte";
     </div>
 
     <!--  DIV DE SEPARACION CON RENUEVA TU SONRISA -->
-    <div class="renueva">
-      
+    <div class="renueva" style="margin-bottom: 20px;">
+      <h2 class="ren-son">¡RENUEVA TU SONRISA HOY!</h2>
+      <button class="btn btn-pro ">
+        <i class="bi bi-whatsapp"></i>
+        Agenda tu Primera Cita Gratis
+      </button>
+    </div>
+
+    <!-- DIV DE RESULTADOS INCREIBLES -->
+    <div class="resultados">
+
     </div>
     
+    <!-- DIV DE INSTALACIONES -->
+    <div class="instalaciones">
+      <div class="contenido-insta">
+        <h2>Conoce Nuestras Instalaciones</h2>
+        <p>Ofecemos servicios dentales en instalaciones de primer nivel.</p>
+        <p>En nuestra clínica dental, estamos comprometidos a brindarte una sonrisa saludable y radiante. Con un ambiente cálido y acogedor, te ofrecemos un cuidado dental excepcional para que te sientas bienvenido y cómodo durante tu visita.</p>
+
+        <div class="boton-insta">
+          <button class="btn btn-insta ">
+            <i class="bi bi-whatsapp"></i>
+            Agenda tu Primera Cita Gratis
+          </button>
+        </div>
+      </div>
+      <div class="img-insta">
+        <img src="img/instalaciones.png" alt="">
+      </div>
+    </div>
 
     <!-- <div class="nuestroEquipo">
       <h1>NUESTRO EQUIPO</h1>
@@ -89,8 +116,41 @@ import Mapa from "../../Componentes/Mapa.svelte";
     <!--  -->
 
     <!-- Mapa -->
-    <div id="map">
-      <Mapa />
+    <div class="map-forms">
+      <div class="forms">
+        <h1>Contactanos</h1>
+        <h3>Agenda tu primera cita GRATIS</h3>
+        <p>Todos nuestros servicios de atención dental se brindan en cómodas instalaciones, con citas convencionales por la mañana, tarde y los sábados. Contamos con consultorios odontológicos modernos de primera calidad y un equipo altamente capacitado de dentistas y asistentes dentales.</p>
+        <div class="contacto">
+          <div class="inputs">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+          </div>
+        </div>
+      </div>
+      <div id="map">
+        <Mapa />
+      </div>
+    </div>
+    
+
+    <!-- INFORMACION DE CONTACTO -->
+    <div class="contactos">
+      <img src="img/informacion.png" alt="">
     </div>
 </main>
 
@@ -193,43 +253,103 @@ import Mapa from "../../Componentes/Mapa.svelte";
 }
 
 .icono img {
-  border-radius: 50%; /* Hace que la imagen tenga bordes redondeados */
-  width: 100px; /* Ajusta el ancho de la imagen según sea necesario */
-  height: 100px; /* Ajusta la altura de la imagen según sea necesario */
-  object-fit: cover; /* Ajusta el tamaño de la imagen para que cubra completamente el contenedor */
+  border-radius: 50%;
+  width: 100px; 
+  height: 100px; 
+  object-fit: cover; 
+}
+
+/* ESTILOS DE RENOVACION */
+.renueva{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  background: linear-gradient(to left, #5EBCD6, white); 
+}
+
+.ren-son{
+  margin-right: 200px;
+}
+
+/* ESTILO DE LA INSTALACION */
+.instalaciones {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 40px;
+  margin-left: 30px; 
+}
+
+.contenido-insta {
+  flex: 1; 
+  margin-right: 20px; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  margin-left: 10px;
+}
+
+.img-insta img {
+  width: 100%; 
+  max-width: 400px; 
+  margin-right: 20px;
+}
+
+.btn-insta{
+    border: 1px solid black;
+    margin-left: 10px;
+    background-color:#5EBCD6;
+    
+  }
+  .btn-insta:hover{
+    color: white !important;
+    background-color: rgb(46, 188, 158);
+  }
+
+/* ESTILOS PARA EL FORMS Y EL MAPA  */
+.map-forms {
+  display: flex;
+}
+
+.forms {
+  flex: 1; /* El texto ocupa todo el espacio disponible */
+}
+
+#map {
+  flex: 1; /* El mapa ocupa todo el espacio disponible */
+}
+.forms {
+  flex: 1;
+  padding-right: 20px; /* Añade un espacio entre el formulario y el mapa */
+}
+
+.contacto {
+  background-color: #f8f9fa; /* Color de fondo para los campos de formulario */
+  padding: 20px;
+  border-radius: 10px; /* Añade esquinas redondeadas al formulario */
+}
+
+.form-label {
+  font-weight: bold; /* Hace que las etiquetas de los campos de formulario sean más visibles */
+}
+
+.form-control {
+  width: 100%; /* Ajusta el ancho de los campos de formulario */
+  margin-bottom: 10px; /* Añade espacio entre los campos */
+}
+
+textarea.form-control {
+  resize: vertical; /* Hace que el área de texto se pueda redimensionar verticalmente */
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a los extremos */
 }
 
 
-  /* Estilo para nuestro equipo */
-  /* .promocion{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 3px;
-    height: 30vh;
-    
-    flex-wrap: wrap;
-  } */
-/* 
-  .nuestroEquipo h1{
-    font-size: 40px;
-  }
-  .nuestroEquipo h2{
-    text-align: center;
-    width: 70%;
-    border-bottom: 2px solid #5EBCD6;
-  }
-  .nuestroEquipo p {
-    font-size: 20px;
-  }
-  
-  .nuestroEquipoBanners {
-  display: grid;
-  grid-template-columns: 1fr 2fr; 
-} */
-
 /* mapa */
-#map { height: 280px; }
+#map { height: 500px; }
 </style>
  
