@@ -9,8 +9,16 @@
             <!-- Social Media -->
             <p><strong>La Clínica Dental</strong>, está conformada por un grupo de odontólogos especializados en tratamientos correctivos y estéticos, preocupados por el bienestar y la salud de la sociedad mexicana, ofrecemos alternativas con tecnología de punta para garantizar la calidad de nuestro servicio.</p>
         </div>
-        <div>
+        <div class="convenios">
             <h5>CONVENIOS</h5>
+        </div>
+        <div class="rs">
+            <h5>NUESTRAS REDES SOCIALES</h5>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter-x"></i>
+
         </div>
     </footer>
 </main>
@@ -31,5 +39,15 @@
     .gridContainer{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ESTILOS DEL COMVENIO */
+    .convenios{
+        margin-left: 150px;
+    }
+
+    /* ESTILOS DEL RS (REDES SOCIALES) */
+    .rs{
+        margin-left: 100px;
     }
 </style>
