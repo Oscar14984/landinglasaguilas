@@ -3,8 +3,8 @@
     { imgSrc: 'img/Dr-Javier-Serrano.png', title: 'ESPECIALISTA EN ALGO', name: 'Dr. Javier S.' },
     { imgSrc: 'img/Dr-Juan-Carlos.png', title: 'ESPECIALISTA EN OTRA COSA', name: 'Dr. Juan Carlos V.' },
     { imgSrc: 'img/Dr-Miguel-Angel.jpg', title: 'ESPECIALISTA EN ALGO MÁS', name: 'Dr. Miguel Ángel S.' },
-    { imgSrc: 'img/Dr-Miguel-Angel.jpg', title: 'ESPECIALISTA EN ALGO MÁS', name: 'Dr. Miguel Ángel S.' },
-    { imgSrc: 'img/Dr-Miguel-Angel.jpg', title: 'ESPECIALISTA EN ALGO MÁS', name: 'Dr. Miguel Ángel S.' },
+    { imgSrc: 'img/Dr-Sergio-Miravete-1.png', title: 'ESPECIALISTA EN ALGO MÁS', name: 'Dr. Sergio Miravete.' }, 
+    { imgSrc: 'img/Dra-Rosa-Moctezuma.png', title: 'ESPECIALISTA EN ALGO MÁS', name: 'Dra, Rosa Moctezuma.' }, 
     // Agrega más datos según sea necesario
   ];
 </script>
@@ -43,5 +43,6 @@
   }
   .card{
     border: 0;
+    margin-left: 100px;
   }
 </style>

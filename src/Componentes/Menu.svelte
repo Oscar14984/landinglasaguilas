@@ -15,18 +15,18 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="!#">INICIO</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="!#">NOSOTROS</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="!#">TRATAMIENTOS</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="!#">DENTISTAS</a>
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="!#">BLOG</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="!#">CONTÁCTANOS</a>
               </li>
