@@ -36,3 +36,12 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<style>
+  img{
+    border-radius: 150px;
+  }
+  .card{
+    border: 0;
+  }
+</style>

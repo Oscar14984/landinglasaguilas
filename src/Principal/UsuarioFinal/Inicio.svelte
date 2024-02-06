@@ -2,6 +2,8 @@
 import Banners from "../../Banners/Banners.svelte";
 import BannerTratamiento from "../../Banners/BannerTratamiento.svelte";
 import BannerEquiDoc from "../../Banners/BannerEquiDoc.svelte";
+// mapa
+import Mapa from "../../Componentes/Mapa.svelte";
 </script>
 
 <main>
@@ -16,6 +18,7 @@ import BannerEquiDoc from "../../Banners/BannerEquiDoc.svelte";
       <h2>Conoce nuestros Tratamietos</h2>
       <p>Todos nuestros tratamientos y servicios se brindan en cómodas instalaciones con los más altos estándares de calidad.</p>
     </div>
+
     <!-- BANNERS DE LOS TRATAMIENTOS -->
     <BannerTratamiento />
     <div class="promocion">
@@ -30,8 +33,19 @@ import BannerEquiDoc from "../../Banners/BannerEquiDoc.svelte";
       <h2>Dentistas de Primeras</h2>
       <p>En <strong>La Clínica Dental</strong> disponemos de un equipo profecional de dentistas altamente calificados, comprometidos en ofrecerte un servicio de calidad con tecnología avanzada.</p>
     </div>
+
     <!-- BANNER DEL EQUIPO DE DOCTORES -->
-    <BannerEquiDoc />
+    <div class="nuestroEquipoBanners">
+      <BannerEquiDoc />
+      <div>
+        <h5>Nuestros doctores</h5>
+      </div>
+    </div>
+
+    <!-- Mapa -->
+    <div id="map">
+      <Mapa />
+    </div>
 </main>
 
 <style>
@@ -116,5 +130,12 @@ import BannerEquiDoc from "../../Banners/BannerEquiDoc.svelte";
     font-size: 20px;
   }
   
+  .nuestroEquipoBanners {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Una columna más pequeña y otra más grande */
+}
+
+/* mapa */
+#map { height: 280px; }
 </style>
  

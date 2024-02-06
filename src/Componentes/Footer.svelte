@@ -14,10 +14,10 @@
         </div>
         <div class="rs">
             <h5>NUESTRAS REDES SOCIALES</h5>
-            <a href=""><img src="img/ico-facebook.png" alt=""></a>
-            <a href=""><img src="img/icon-youtube.png" alt=""></a>
-            <a href=""><img src="img/icon-instagram.png" alt=""></a>
-            <a href=""><img src="img/icon-twitter.png" alt=""></a>
+            <a href="!#"><img src="img/ico-facebook.png" alt=""></a>
+            <a href="!#"><img src="img/icon-youtube.png" alt=""></a>
+            <a href="!#"><img src="img/icon-instagram.png" alt=""></a>
+            <a href="!#"><img src="img/icon-twitter.png" alt=""></a>
 
         </div>
     </footer>
