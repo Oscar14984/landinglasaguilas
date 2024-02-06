@@ -14,10 +14,10 @@
         </div>
         <div class="rs">
             <h5>NUESTRAS REDES SOCIALES</h5>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-twitter-x"></i>
+            <a href=""><img src="img/ico-facebook.png" alt=""></a>
+            <a href=""><img src="img/icon-youtube.png" alt=""></a>
+            <a href=""><img src="img/icon-instagram.png" alt=""></a>
+            <a href=""><img src="img/icon-twitter.png" alt=""></a>
 
         </div>
     </footer>
