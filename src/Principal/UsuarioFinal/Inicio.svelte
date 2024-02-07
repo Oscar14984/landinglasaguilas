@@ -6,7 +6,7 @@ import BannerEquiDoc from "../../Banners/BannerEquiDoc.svelte";
 import Mapa from "../../Componentes/Mapa.svelte";
 </script>
 
-<main>
+<main class="container">
   <!-- BANNRS DEL PRINCIPIO DE PAGINA -->
     <Banners />
     <button class="btn btn-agenda">
