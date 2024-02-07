@@ -141,6 +141,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
             <textarea class="form-control" id="mensaje" rows="3"></textarea>
           </div>
         </div>
+        <button class="btn btn-success">Enviar</button>
       </div>
       <div id="map">
         <Mapa />
