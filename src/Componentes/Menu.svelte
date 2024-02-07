@@ -30,7 +30,7 @@
                 <a class="nav-link" href="!#">BLOG</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" use:link href="https://laclinicalasaguilas.dental/contactanos/" target="_blank">CONTÁCTANOS</a>
+                <a class="nav-link" use:link href="/Contactanos">CONTÁCTANOS</a>
               </li>
               
             </ul>
