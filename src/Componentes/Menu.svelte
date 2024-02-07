@@ -1,6 +1,7 @@
 <script>
 	import Inicio from './../Principal/UsuarioFinal/Inicio.svelte';
   import {link} from 'svelte-spa-router'
+ 
 
 </script>
 
@@ -29,7 +30,7 @@
                 <a class="nav-link" href="!#">BLOG</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="!#">CONTÁCTANOS</a>
+                <a class="nav-link" use:link href="/Contactanos">CONTÁCTANOS</a>
               </li>
               
             </ul>
