@@ -310,46 +310,87 @@ import Mapa from "../../Componentes/Mapa.svelte";
 /* ESTILOS PARA EL FORMS Y EL MAPA  */
 .map-forms {
   display: flex;
+  margin-left: 35px;
+}
+.map-forms h1{
+  margin-left: 250px;
+  border-bottom: #5EBCD6 2px solid;
+  width: 300px;
+}
+.map-forms h3{
+  margin-left: 190px;
 }
 
 .forms {
-  flex: 1; /* El texto ocupa todo el espacio disponible */
+  flex: 1; 
 }
 
 #map {
-  flex: 1; /* El mapa ocupa todo el espacio disponible */
+  flex: 1; 
 }
 .forms {
   flex: 1;
-  padding-right: 20px; /* Añade un espacio entre el formulario y el mapa */
+  padding-right: 20px; 
 }
 
 .contacto {
-  background-color: #f8f9fa; /* Color de fondo para los campos de formulario */
+  background-color: #f8f9fa; 
   padding: 20px;
-  border-radius: 10px; /* Añade esquinas redondeadas al formulario */
+  border-radius: 10px; 
 }
 
 .form-label {
-  font-weight: bold; /* Hace que las etiquetas de los campos de formulario sean más visibles */
+  font-weight: bold; 
 }
 
 .form-control {
-  width: 100%; /* Ajusta el ancho de los campos de formulario */
-  margin-bottom: 10px; /* Añade espacio entre los campos */
+  width: 100%; 
+  margin-bottom: 10px; 
 }
 
 textarea.form-control {
-  resize: vertical; /* Hace que el área de texto se pueda redimensionar verticalmente */
+  resize: vertical; 
 }
 
 .inputs {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos a los extremos */
+  justify-content: space-between;
 }
 
 
 /* mapa */
 #map { height: 500px; }
+
+@media screen and (max-width: 767px) {
+  .map-forms {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .map-forms h1 {
+    margin-left: 0;
+    width: auto;
+    text-align: center;
+  }
+  .map-forms h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .forms {
+    padding-right: 0;
+  }
+  .contacto {
+    border-radius: 0; 
+  }
+  .form-control {
+    width: calc(100% - 20px); 
+  }
+  .inputs {
+    flex-direction: column; 
+  }
+  .img-insta img {
+    margin-right: 0; 
+  }
+}
+
 </style>
  
