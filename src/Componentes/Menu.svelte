@@ -20,7 +20,7 @@
                 <a class="nav-link" href="!#">NOSOTROS</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" use:link href="/Tratamineto">TRATAMIENTOS</a>
+                <a class="nav-link" use:link href="/Tratamientos">TRATAMIENTOS</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" href="!#">DENTISTAS</a>
