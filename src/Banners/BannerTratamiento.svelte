@@ -141,5 +141,25 @@
 
 
 <style>
+/* Añadir espacio entre las cartas */
+.card {
+    margin-right: 30px; /* Espacio entre las cartas */
+}
+
+/* Hacer las imágenes más pequeñas */
+.card-img-top {
+    max-height: 300px; /* Altura máxima de la imagen */
+    object-fit: cover; /* Ajustar la imagen para cubrir el tamaño */
+}
+/* Media query para ajustar estilos en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .card {
+        margin-right: 15px; /* Reducir espacio entre las cartas en pantallas pequeñas */
+    }
+
+    .card-img-top {
+        max-height: 200px; /* Reducir altura máxima de la imagen en pantallas pequeñas */
+    }
+}
 
 </style>

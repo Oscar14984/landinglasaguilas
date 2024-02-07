@@ -37,34 +37,29 @@
 <style>
     /* COLOR QUE SE USARA EN EL FOOTER #2D3549 */
     /* COLOR QUE SE USARA EN LA PARTE DE DERECHOS RESERVADOS #192135 */
-    footer{
-        background-color: #2D3549;
-        /* position: fixed; */
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        color: white;
-    }
+   /* Estilos generales del footer */
+footer {
+    background-color: #2D3549;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 20px 0; /* Añade espacio interno arriba y abajo */
+}
 
-    /* GRID DEL FOOTER */
-    .gridContainer{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+/* Estilos del grid del footer */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Utiliza un grid fluido */
+    gap: 20px; /* Agrega espacio entre las columnas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
 
-    /* ESTILOS DEL COMVENIO */
-    .convenios{
-        margin-left: 150px;
-    }
-
-    /* ESTILOS DEL RS (REDES SOCIALES) */
-    .rs{
-        margin-left: 100px;
-    }
-
-    .convenios {
+/* Estilos específicos del área de convenios */
+.convenios {
     text-align: center;
-    margin-top: 20px;
 }
 
 .convenios h5 {
@@ -85,7 +80,16 @@
     margin-bottom: 0; /* Elimina el margen inferior del último enlace */
 }
 
-.container p{
-margin-left: 30px;
+/* Estilos específicos del área de redes sociales */
+.rs {
+    text-align: center;
 }
+
+/* Estilos para los párrafos dentro del footer */
+.container p {
+    margin-left: 30px;
+    margin-top: 0; /* Elimina el margen superior predeterminado */
+    margin-bottom: 10px; /* Agrega espacio inferior */
+}
+
 </style>

@@ -180,6 +180,19 @@ import Mapa from "../../Componentes/Mapa.svelte";
   .tratamientos p {
     font-size: 20px;
   }
+  @media screen and (max-width: 768px) {
+    .tratamientos h1 {
+        font-size: 32px; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    .tratamientos h2 {
+        width: 90%; /* Ajustar el ancho del subtitulo para que sea más largo en pantallas pequeñas */
+    }
+
+    .tratamientos p {
+        font-size: 16px; /* Reducir el tamaño del texto en pantallas pequeñas */
+    }
+}
   /* @media screen and (min-width: 960px) {
      .tratamientos {
        flex-direction: row;
@@ -211,6 +224,16 @@ import Mapa from "../../Componentes/Mapa.svelte";
     color: white !important;
     background-color: rgb(46, 188, 158);
   }
+  /* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .promocion {
+        padding: 5px; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    .btn-pro {
+        margin-left: 5px; /* Reducir el margen izquierdo del botón en pantallas pequeñas */
+    }
+}
 
 /* ESTILOS DE LAS PROMOCIONES */
 .promocion {
@@ -223,6 +246,17 @@ import Mapa from "../../Componentes/Mapa.svelte";
   display: flex;
   align-items: center; /* Centra el botón verticalmente */
   /* border: 0; */
+}
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .promocion {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
+    }
+
+    .btn-promocion {
+        justify-content: center; /* Centrar el botón horizontalmente en pantallas pequeñas */
+        margin-top: 10px; /* Añadir un poco de espacio encima del botón en pantallas pequeñas */
+    }
 }
 
 /* ESTILOS DE LA BIENVENIDA */
@@ -258,6 +292,21 @@ import Mapa from "../../Componentes/Mapa.svelte";
   height: 100px; 
   object-fit: cover; 
 }
+/* Estilos responsivos */
+@media screen and (max-width: 300px) {
+    .bienvenida {
+        flex-direction: row; /* Cambiar a una columna en pantallas pequeñas */
+    }
+
+    .img-bienvenida {
+        margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
+        margin-bottom: 20px; /* Añadir espacio debajo de la imagen en pantallas pequeñas */
+    }
+
+    .icono {
+        flex: 1 1 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+    }
+}
 
 /* ESTILOS DE RENOVACION */
 .renueva{
@@ -270,6 +319,13 @@ import Mapa from "../../Componentes/Mapa.svelte";
 
 .ren-son{
   margin-right: 200px;
+}
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .ren-son {
+        margin-right: 0; /* Elimina el margen en pantallas pequeñas */
+        margin-bottom: 20px; /* Agrega espacio inferior en pantallas pequeñas */
+    }
 }
 
 /* ESTILO DE LA INSTALACION */
@@ -306,6 +362,18 @@ import Mapa from "../../Componentes/Mapa.svelte";
     color: white !important;
     background-color: rgb(46, 188, 158);
   }
+  /* Estilos responsivos */
+@media screen and (min-width: 768px) {
+    .instalaciones {
+        flex-direction: row; /* Cambia de nuevo a una fila en pantallas más grandes */
+    }
+    .contenido-insta {
+        align-items: flex-start; /* Alinea el contenido al principio en pantallas más grandes */
+    }
+    .img-insta img {
+        margin-bottom: 0; /* Elimina el espacio inferior entre la imagen y el botón en pantallas más grandes */
+    }
+}
 
 /* ESTILOS PARA EL FORMS Y EL MAPA  */
 .map-forms {
