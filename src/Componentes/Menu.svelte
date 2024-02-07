@@ -30,7 +30,7 @@
                 <a class="nav-link" href="!#">BLOG</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" use:link href="/Contactanos">CONTÁCTANOS</a>
+                <a class="nav-link" use:link href="https://laclinica.mx/contactanos/" target="_blank">CONTÁCTANOS</a>
               </li>
               
             </ul>
