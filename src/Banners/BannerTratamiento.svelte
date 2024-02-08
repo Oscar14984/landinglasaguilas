@@ -141,25 +141,27 @@
 
 
 <style>
-/* Añadir espacio entre las cartas */
+/* Estilos para la sección de las cartas */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap; /* Envolver las cartas cuando el espacio sea insuficiente */
+    justify-content: center; /* Centrar las cartas horizontalmente */
+    gap: 20px; /* Espacio entre las cartas */
+}
+
+/* Estilos para cada carta */
 .card {
-    margin-right: 30px; /* Espacio entre las cartas */
+    flex: 1 0 300px; /* Flexibilidad para adaptarse al espacio disponible y establecer el ancho máximo */
+    max-width: 300px; /* Ancho máximo de cada carta */
+    margin-bottom: 20px; /* Espacio entre las cartas */
 }
 
-/* Hacer las imágenes más pequeñas */
-.card-img-top {
-    max-height: 300px; /* Altura máxima de la imagen */
-    object-fit: cover; /* Ajustar la imagen para cubrir el tamaño */
-}
-/* Media query para ajustar estilos en pantallas más pequeñas */
-@media screen and (max-width: 768px) {
+/* Ajustes adicionales para dispositivos móviles */
+@media screen and (max-width: 767px) {
     .card {
-        margin-right: 15px; /* Reducir espacio entre las cartas en pantallas pequeñas */
-    }
-
-    .card-img-top {
-        max-height: 200px; /* Reducir altura máxima de la imagen en pantallas pequeñas */
+        flex-basis: calc(100% - 20px); /* Establecer la base de flexibilidad al 100% menos el espacio entre las cartas */
     }
 }
+
 
 </style>

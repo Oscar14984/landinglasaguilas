@@ -293,21 +293,24 @@ import Mapa from "../../Componentes/Mapa.svelte";
   height: 100px; 
   object-fit: cover; 
 }
-/* Estilos responsivos */
-@media screen and (max-width: 300px) {
+/* Estilos responsivos bienvenida */
+@media screen and (max-width: 767px) { 
     .bienvenida {
-        flex-direction: row; /* Cambiar a una columna en pantallas pequeñas */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .img-bienvenida {
-        margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
-        margin-bottom: 20px; /* Añadir espacio debajo de la imagen en pantallas pequeñas */
+        margin-right: 0; 
+        margin-bottom: 20px; 
     }
 
-    .icono {
-        flex: 1 1 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+    .iconos {
+        order: -1; 
+        margin-top: 20px;
     }
 }
+
 
 /* ESTILOS DE RENOVACION */
 .renueva{
@@ -324,8 +327,8 @@ import Mapa from "../../Componentes/Mapa.svelte";
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
     .ren-son {
-        margin-right: 0; /* Elimina el margen en pantallas pequeñas */
-        margin-bottom: 20px; /* Agrega espacio inferior en pantallas pequeñas */
+        margin-right: 0; 
+        margin-bottom: 20px;
     }
 }
 
@@ -364,15 +367,24 @@ import Mapa from "../../Componentes/Mapa.svelte";
     background-color: rgb(46, 188, 158);
   }
   /* Estilos responsivos */
-@media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     .instalaciones {
-        flex-direction: row; /* Cambia de nuevo a una fila en pantallas más grandes */
+        flex-direction: column-reverse; 
+        align-items: center; 
+        margin-left: 0; 
     }
+
     .contenido-insta {
-        align-items: flex-start; /* Alinea el contenido al principio en pantallas más grandes */
+        text-align: center; 
+        margin-right: 0; 
     }
+
     .img-insta img {
-        margin-bottom: 0; /* Elimina el espacio inferior entre la imagen y el botón en pantallas más grandes */
+        margin-bottom: 20px; 
+    }
+
+    .boton-insta {
+        margin-top: 20px;
     }
 }
 
@@ -460,6 +472,7 @@ textarea.form-control {
     margin-right: 0; 
   }
 }
+
 
 </style>
  

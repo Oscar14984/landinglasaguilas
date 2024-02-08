@@ -78,4 +78,17 @@
     text-align: center;
     z-index: 1;
   }
+  /* Estilos para el logo en la barra de navegación */
+.navbar img {
+  max-width: 100%; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+/* Media query para ajustar el tamaño del logo en dispositivos móviles */
+@media screen and (max-width: 767px) {
+  .navbar img {
+    max-width: 80px; 
+  }
+}
 </style>
