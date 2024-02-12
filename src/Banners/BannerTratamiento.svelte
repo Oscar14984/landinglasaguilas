@@ -162,6 +162,15 @@ h5{
     box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.55);
 }
 
+.card:hover{
+    animation: slide-top 0.4s linear both}
+    @keyframes slide-top
+    {0%
+    {transform:translateY(0)}
+    100%{transform:translateY(-40px)
+    }
+}
+
 /* Ajustes adicionales para dispositivos móviles */
 @media screen and (max-width: 767px) {
     .card {
