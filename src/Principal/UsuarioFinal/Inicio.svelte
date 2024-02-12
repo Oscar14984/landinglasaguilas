@@ -250,6 +250,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
     text-shadow: 1px 1px 2px #fcfcfc;
     border-radius: 10px;
     background: linear-gradient(to right, #5EBCD6, white); 
+    margin-bottom: 20px;
   }
   .titulo-promo{
     border-bottom: 2px solid  #E045EB;
@@ -321,7 +322,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
 }
 
 .icono {
-  flex: 1 1 50%; /* Dos iconos por fila */
+  flex: 1 1 50%; 
   margin-bottom: 20px;
   display: flex;
   align-items: center;
