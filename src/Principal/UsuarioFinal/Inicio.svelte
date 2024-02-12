@@ -9,6 +9,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
 <main class="container">
   <!-- BANNRS DEL PRINCIPIO DE PAGINA -->
     <Banners />
+    <br>
     <button class="btn btn-agenda">
       <i class="bi bi-whatsapp"></i>
       Agenda tu Primera Cita Gratis
