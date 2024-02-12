@@ -311,6 +311,13 @@ import Mapa from "../../Componentes/Mapa.svelte";
 .bienvenida {
   display: flex;
 }
+.bienvenida h2::after{
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  border-bottom: #E045EB solid;
+}
 
 .img-bienvenida {
   flex: 0 0 auto;
@@ -451,7 +458,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
 }
 .map-forms h1{
   margin-left: 250px;
-  border-bottom: #5EBCD6 2px solid;
+  border-bottom: #E045EB 2px solid;
   width: 300px;
 }
 .map-forms h3{
