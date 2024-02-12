@@ -28,7 +28,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
     <!-- PARTE DE LAS PROMOCIONES -->
     <div class="promocion">
       <div class="contenido">
-        <p style="font-size: 30px;">PROMOCIONES ESPECIALES.</p>
+        <p class="titulo-promo" style="font-size: 30px;">PROMOCIONES ESPECIALES.</p>
         <p style="font-size: 20px;">Pregunta por las promociones especiales que tenemos para los jóvenes de entre 16 a 28 años.</p>
       </div>
       <div class="btn-promocion">
@@ -189,7 +189,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
 </main>
 
 <style>
-/* COLOR QUE SE USA EN lCD #5EBCD6 */
+/* COLOR QUE SE USA EN lCD color azul:#5EBCD6    color morado: #E045EB*/
   .btn-agenda{
     background-color:#5EBCD6;
     color: white;
@@ -251,11 +251,15 @@ import Mapa from "../../Componentes/Mapa.svelte";
     border-radius: 10px;
     background: linear-gradient(to right, #5EBCD6, white); 
   }
-
+  .titulo-promo{
+    border-bottom: 2px solid  #E045EB;
+  }
    /*  Estilos para el boton de la cita gratuita */
   .btn-pro{
     border: 1px solid black;
     margin-left: 10px;
+    background-color: #5EBCD6;
+    color: white;
   }
   .btn-pro:hover{
     color: white !important;
@@ -265,35 +269,35 @@ import Mapa from "../../Componentes/Mapa.svelte";
   /* Estilos responsivos */
 @media screen and (max-width: 768px) {
     .promocion {
-        padding: 5px; /* Reducir el padding en pantallas pequeñas */
+        padding: 5px; 
     }
 
     .btn-pro {
-        margin-left: 5px; /* Reducir el margen izquierdo del botón en pantallas pequeñas */
+        margin-left: 5px; 
     }
 }
 
 /* ESTILOS DE LAS PROMOCIONES */
 .promocion {
   display: grid;
-  grid-template-columns: auto auto; /* Columna 1 para el contenido, columna 2 para el botón */
-  gap: 20px; /* Espacio entre las columnas */
+  grid-template-columns: auto auto; 
+  gap: 20px; 
 }
 
 .btn-promocion {
   display: flex;
-  align-items: center; /* Centra el botón verticalmente */
+  align-items: center; 
   /* border: 0; */
 }
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
     .promocion {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
+        grid-template-columns: 1fr; 
     }
 
     .btn-promocion {
-        justify-content: center; /* Centrar el botón horizontalmente en pantallas pequeñas */
-        margin-top: 10px; /* Añadir un poco de espacio encima del botón en pantallas pequeñas */
+        justify-content: center; 
+        margin-top: 10px; 
     }
 }
 
