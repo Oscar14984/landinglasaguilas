@@ -147,25 +147,25 @@ h5{
 }
 .d-flex {
     display: flex;
-    flex-wrap: wrap; /* Envolver las cartas cuando el espacio sea insuficiente */
-    justify-content: center; /* Centrar las cartas horizontalmente */
-    gap: 20px; /* Espacio entre las cartas */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
 }
 
 /* Estilos para cada carta */
 .card {
-    flex: 1 0 300px; /* Flexibilidad para adaptarse al espacio disponible y establecer el ancho máximo */
-    max-width: 300px; /* Ancho máximo de cada carta */
-    margin-bottom: 20px; /* Espacio entre las cartas */
-    -webkit-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.75);
+    flex: 1 0 300px; 
+    max-width: 300px; 
+    margin-bottom: 20px; 
+    -webkit-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.55);
+    box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.55);
 }
 
 /* Ajustes adicionales para dispositivos móviles */
 @media screen and (max-width: 767px) {
     .card {
-        flex-basis: calc(100% - 20px); /* Establecer la base de flexibilidad al 100% menos el espacio entre las cartas */
+        flex-basis: calc(100% - 20px);
     }
 }
 
