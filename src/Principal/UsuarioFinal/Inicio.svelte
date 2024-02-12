@@ -71,7 +71,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
     </div>
 
     <!--  DIV DE SEPARACION CON RENUEVA TU SONRISA -->
-    <div class="renueva" style="margin-bottom: 20px;">
+    <div class="renueva">
       <h2 class="ren-son">¡RENUEVA TU SONRISA HOY!</h2>
       <button class="btn btn-pro ">
         <i class="bi bi-whatsapp"></i>
@@ -252,9 +252,12 @@ import Mapa from "../../Componentes/Mapa.svelte";
     background: linear-gradient(to right, #5EBCD6, white); 
     margin-bottom: 20px;
   }
-  .titulo-promo{
-    border-bottom: 2px solid  #E045EB;
-  }
+  .titulo-promo::after {
+  content: "";
+  display: block;
+  width: 60%; 
+  border-bottom: 2px solid #E045EB;
+}
    /*  Estilos para el boton de la cita gratuita */
   .btn-pro{
     border: 1px solid black;
@@ -284,6 +287,8 @@ import Mapa from "../../Componentes/Mapa.svelte";
   grid-template-columns: auto auto; 
   gap: 20px; 
 }
+
+
 
 .btn-promocion {
   display: flex;
@@ -361,6 +366,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
   justify-content: center;
   padding: 10px;
   background: linear-gradient(to left, #5EBCD6, white); 
+  margin-bottom: 60px;
 }
 
 .ren-son{
@@ -379,9 +385,16 @@ import Mapa from "../../Componentes/Mapa.svelte";
   display: flex;
   justify-content: space-between; 
   align-items: center; 
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   margin-left: 30px; 
 }
+.instalaciones h2::after {
+  content: "";
+  display: block;
+  width: 50%; 
+  border-bottom: 2px solid #E045EB;
+}
+
 
 .contenido-insta {
   flex: 1; 
