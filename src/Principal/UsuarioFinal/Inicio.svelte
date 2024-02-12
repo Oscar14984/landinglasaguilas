@@ -209,7 +209,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
   .tratamientos h2 {
     text-align: center;
     width: 70%;
-    border-bottom: 2px solid #5EBCD6;
+    border-bottom: 2px solid #E045EB;
   }
   .tratamientos p {
     font-size: 20px;
@@ -250,7 +250,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
     text-shadow: 1px 1px 2px #fcfcfc;
     border-radius: 10px;
     background: linear-gradient(to right, #5EBCD6, white); 
-    margin-bottom: 20px;
+    margin-bottom: 100px;
   }
   .titulo-promo::after {
   content: "";
@@ -288,12 +288,9 @@ import Mapa from "../../Componentes/Mapa.svelte";
   gap: 20px; 
 }
 
-
-
 .btn-promocion {
   display: flex;
   align-items: center; 
-  /* border: 0; */
 }
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
@@ -310,6 +307,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
 /* ESTILOS DE LA BIENVENIDA */
 .bienvenida {
   display: flex;
+  margin-bottom: 50px;
 }
 .bienvenida h2::after{
   content: "";
