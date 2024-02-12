@@ -22,7 +22,9 @@ import Mapa from "../../Componentes/Mapa.svelte";
     </div>
 
     <!-- BANNERS DE LOS TRATAMIENTOS -->
-    <BannerTratamiento />
+    <div class="banner-tratamiento">
+      <BannerTratamiento />
+    </div>
     <!-- PARTE DE LAS PROMOCIONES -->
     <div class="promocion">
       <div class="contenido">
@@ -235,6 +237,9 @@ import Mapa from "../../Componentes/Mapa.svelte";
      }
    } */
 
+   .banner-tratamiento{
+    margin-bottom: 60px;
+   }
   /* Estilos de el div de promocion */
   .promocion{
     display: flex;

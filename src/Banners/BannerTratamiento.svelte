@@ -142,6 +142,9 @@
 
 <style>
 /* Estilos para la sección de las cartas */
+h5{
+    border-bottom: 2px solid #5EBCD6;
+}
 .d-flex {
     display: flex;
     flex-wrap: wrap; /* Envolver las cartas cuando el espacio sea insuficiente */
@@ -154,6 +157,9 @@
     flex: 1 0 300px; /* Flexibilidad para adaptarse al espacio disponible y establecer el ancho máximo */
     max-width: 300px; /* Ancho máximo de cada carta */
     margin-bottom: 20px; /* Espacio entre las cartas */
+    -webkit-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.75);
 }
 
 /* Ajustes adicionales para dispositivos móviles */
