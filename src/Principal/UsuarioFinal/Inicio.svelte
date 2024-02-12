@@ -1,4 +1,5 @@
 <script>
+	import Contactanos from './Contactanos.svelte';
 import Banners from "../../Banners/Banners.svelte";
 import BannerTratamiento from "../../Banners/BannerTratamiento.svelte";
 import BannerEquiDoc from "../../Banners/BannerEquiDoc.svelte";
@@ -152,26 +153,34 @@ import Mapa from "../../Componentes/Mapa.svelte";
 
     <!-- INFORMACION DE CONTACTO -->
     <div class="contactos">
-      <img src="img/informacion.png" alt="">
+      <!-- <img src="img/informacion.png" alt=""> -->
       <div class="row">
-        <div class="col-12 col-sm-3">
+        <div class="col-12 col-sm-3 logo-llamada">
           <img src="logos/logo-llamada.png" alt="">
-          <p>Llámanos</p>
-          <p>5589003683</p>
+          <div class="contenido-contactos">
+            <p>Llámanos</p>
+            <p>5589003683</p>
+          </div>
         </div>
-        <div class="col-12 col-sm-3">
+        <div class="col-12 col-sm-3 logo-llamada">
           <img src="logos/logo-ubicacion.png" alt="">
-          <p>Dónde Estamos</p>
-          <p>Google Maps</p>
+          <div class="contenido-contactos">
+            <p>Dónde Estamos</p>
+            <p>Google Maps</p>
+          </div>
         </div>
-        <div class="col-12 col-sm-3">
+        <div class="col-12 col-sm-3 logo-llamada">
           <img src="logos/logo-horarios.png" alt="">
-          <p>Lun - sab: 9:00 am - 8:00 pm</p>
+          <div class="contenido-contactos">
+            <p>Lun - sab: 9:00 am - 8:00 pm</p>
+          </div>
         </div>
-        <div class="col-12 col-sm-3">
+        <div class="col-12 col-sm-3 logo-llamada">
           <img src="logos/logo-escriben.png" alt="">
-          <p>Escribenos</p>
-          <p>contacto@laclinicalasaguilas.dental</p>
+          <div class="contenido-contactos">
+            <p>Escribenos</p>
+            <p>contacto@laclinicalasaguilas.dental</p>
+          </div>
         </div>
       </div>
     </div>
@@ -246,6 +255,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
   .btn-pro:hover{
     color: white !important;
     background-color: rgb(46, 188, 158);
+    border: 1px solid #5EBCD6;
   }
   /* Estilos responsivos */
 @media screen and (max-width: 768px) {
@@ -382,11 +392,12 @@ import Mapa from "../../Componentes/Mapa.svelte";
     border: 1px solid black;
     margin-left: 10px;
     background-color:#5EBCD6;
-    
+    color: white;
   }
   .btn-insta:hover{
     color: white !important;
     background-color: rgb(46, 188, 158);
+    border: 1px solid #5EBCD6;
   }
   /* Estilos responsivos */
   @media screen and (max-width: 767px) {
@@ -495,6 +506,15 @@ textarea.form-control {
   }
 }
 
+/* ESTILOS DE LOS ICONOS DE CONTACTO */
+.contactos{
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
 
+.logo-llamada{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 </style>
  
