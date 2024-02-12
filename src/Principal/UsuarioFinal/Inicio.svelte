@@ -153,6 +153,27 @@ import Mapa from "../../Componentes/Mapa.svelte";
     <!-- INFORMACION DE CONTACTO -->
     <div class="contactos">
       <img src="img/informacion.png" alt="">
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <img src="logos/logo-llamada.png" alt="">
+          <p>Llámanos</p>
+          <p>5589003683</p>
+        </div>
+        <div class="col-12 col-sm-3">
+          <img src="logos/logo-ubicacion.png" alt="">
+          <p>Dónde Estamos</p>
+          <p>Google Maps</p>
+        </div>
+        <div class="col-12 col-sm-3">
+          <img src="logos/logo-horarios.png" alt="">
+          <p>Lun - sab: 9:00 am - 8:00 pm</p>
+        </div>
+        <div class="col-12 col-sm-3">
+          <img src="logos/logo-escriben.png" alt="">
+          <p>Escribenos</p>
+          <p>contacto@laclinicalasaguilas.dental</p>
+        </div>
+      </div>
     </div>
 </main>
 
