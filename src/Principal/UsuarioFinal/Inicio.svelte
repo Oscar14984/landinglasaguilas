@@ -174,14 +174,15 @@ import Mapa from "../../Componentes/Mapa.svelte";
         <div class="col-12 col-sm-3 logo-llamada">
           <img src="logos/logo-horarios.png" alt="">
           <div class="contenido-contactos">
-            <p>Lun - sab: 9:00 am - 8:00 pm</p>
+            <p>Horarios</p>
+            <p class="contacto-horarios">Lun - sab: 9:00 am - 8:00 pm</p>
           </div>
         </div>
         <div class="col-12 col-sm-3 logo-llamada">
           <img src="logos/logo-escriben.png" alt="">
           <div class="contenido-contactos">
             <p>Escribenos</p>
-            <p>contacto@laclinicalasaguilas.dental</p>
+            <p class="contacto-email">contacto@laclinicalasaguilas.dental</p>
           </div>
         </div>
       </div>
@@ -193,7 +194,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
   .btn-agenda{
     background-color:#5EBCD6;
     color: white;
-    margin-right: 10px;
+    margin-left: 10%;
   }
   /* PARA LOS ESTILOS DEL TRATAMIENTOS */
   .tratamientos{
@@ -260,7 +261,7 @@ import Mapa from "../../Componentes/Mapa.svelte";
 }
    /*  Estilos para el boton de la cita gratuita */
   .btn-pro{
-    border: 1px solid black;
+    border: 1px solid ;
     margin-left: 10px;
     background-color: #5EBCD6;
     color: white;
@@ -455,12 +456,12 @@ import Mapa from "../../Componentes/Mapa.svelte";
   margin-left: 35px;
 }
 .map-forms h1{
-  margin-left: 250px;
+  margin-left: 150px;
   border-bottom: #E045EB 2px solid;
-  width: 300px;
+  width: 360px;
 }
 .map-forms h3{
-  margin-left: 190px;
+  margin-left: 150px;
 }
 
 .forms {
@@ -543,6 +544,15 @@ textarea.form-control {
 .logo-llamada{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 767px){
+  .logo-llamada{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
 }
 </style>
  

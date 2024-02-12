@@ -157,9 +157,9 @@ h5{
     flex: 1 0 300px; 
     max-width: 300px; 
     margin-bottom: 20px; 
-    -webkit-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.55);
-    -moz-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.55);
-    box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.45);
 }
 
 .card:hover{
