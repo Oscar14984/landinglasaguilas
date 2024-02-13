@@ -70,14 +70,14 @@ footer {
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
-    color: white; /* Cambia el color de los enlaces */
-    border-bottom: 1px solid #ccc; /* Agrega un borde inferior */
-    padding-bottom: 5px; /* Agrega espacio entre el texto y el borde inferior */
+    color: white; 
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px; 
 }
 
 /* Estilos para el último enlace */
 .convenios a:last-child {
-    margin-bottom: 0; /* Elimina el margen inferior del último enlace */
+    margin-bottom: 0; 
 }
 
 /* Estilos específicos del área de redes sociales */
@@ -88,8 +88,8 @@ footer {
 /* Estilos para los párrafos dentro del footer */
 .container p {
     margin-left: 30px;
-    margin-top: 0; /* Elimina el margen superior predeterminado */
-    margin-bottom: 10px; /* Agrega espacio inferior */
+    margin-top: 0; 
+    margin-bottom: 10px; 
 }
 img{
     margin-bottom: 30px;
