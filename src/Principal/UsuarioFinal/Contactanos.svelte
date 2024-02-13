@@ -60,6 +60,12 @@ let horas = "9:00AM - 7:00PM"
     color: white;
    font-size: 2rem;
 }
+@media screen and (max-width: 768px) { 
+    .contacto-principal {
+        font-size: 1.2rem; 
+        background-size: 200%; 
+    }
+}
 
 .direccion {
         /* text-align: center; */
@@ -89,9 +95,11 @@ let horas = "9:00AM - 7:00PM"
         margin-right: 20px;
     }
 
-    /* .direccion div:not(:last-child) {
-        margin-bottom: 10px;
-    } */
+    @media screen and (max-width: 768px){
+        .direccion{
+            margin-right: 50px;
+        }
+    }
 
 .horarios{
     display: grid;
@@ -114,5 +122,11 @@ let horas = "9:00AM - 7:00PM"
         text-align: left;
         margin-right: 15px;
     }
+    @media screen and (max-width: 768px){
+        .horarios{
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+    }   
 
 </style>
