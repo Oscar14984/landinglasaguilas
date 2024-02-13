@@ -5,6 +5,25 @@ import BannerTratamiento from "../../Banners/BannerTratamiento.svelte";
 import BannerEquiDoc from "../../Banners/BannerEquiDoc.svelte";
 // mapa
 import Mapa from "../../Componentes/Mapa.svelte";
+
+let videoId = "ORQwM8ZhGGQ?si=BygP4oAo27wdtHNN";
+// BRAKETS
+// https://youtu.be/ORQwM8ZhGGQ?si=BygP4oAo27wdtHNN
+// IMPLANTE DENTAL
+// https://youtu.be/y0mxd29n-B0?si=cCm46zA7RDW1RGs_
+// PRÓTESIS
+// https://youtu.be/h3gjk8d3Eik?si=OiKUZ_Y4p5ZxObiq
+// EXODONCIA COMPLEJA
+// https://youtu.be/f436r8y0W6Q?si=IGw9VQqUuYqsOzu8
+const videos = [
+    { id: "ORQwM8ZhGGQ?si=BygP4oAo27wdtHNN", image: "ortodoncias-dentales-v2.jpg", title: " BRACKETS" },
+    { id: "y0mxd29n-B0?si=cCm46zA7RDW1RGs_", image: "implantologia-dental-v2.jpg", title: "IMPLANTE DENTAL" },
+    { id: "h3gjk8d3Eik?si=OiKUZ_Y4p5ZxObiq", image: "protesis-dental-2.jpg", title: "PRÓTESIS" },
+    { id: "f436r8y0W6Q?si=IGw9VQqUuYqsOzu8", image: "Cirugia-Maxilofacial.jpg", title: "Cirugía Maxilofacial" }
+  ];
+  const cambiarVideo = (nuevoVideoId) => {
+    videoId = nuevoVideoId;
+  }
 </script>
 
 <main class="container">
@@ -25,6 +44,35 @@ import Mapa from "../../Componentes/Mapa.svelte";
     <div class="banner-tratamiento">
       <BannerTratamiento />
     </div>
+
+    <!-- DEV PARA MOSTRAR VIDEOS -->
+    <div class="reproductor">
+      <!-- svelte-ignore a11y-missing-attribute -->
+      <iframe
+          width="560"
+          height="315"
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+    ></iframe>
+  </div>
+
+
+<!-- DIV PARA LOS BOTONES DE SELECCION DE VIDEOS -->
+<div class="botones-videos">
+  <h2>TRATAMIENTOS</h2>
+  <div class="buttons-container">
+      {#each videos as video}
+      <div class="button-wrapper">
+        <button on:click={() => cambiarVideo(video.id)}>
+          <img src={`banner/${video.image}`} alt={video.title}>
+        </button>
+        <p>{video.title}</p>
+      </div>
+    {/each}
+  </div>
+</div>
     <!-- PARTE DE LAS PROMOCIONES -->
     <div class="promocion">
       <div class="contenido">
@@ -554,5 +602,84 @@ textarea.form-control {
     text-align: center;
   }
 }
+
+/* ESTILOS PARA EL AJUSTE DEL VIDEO */
+/* .reproductor {
+        position: absolute; 
+        top: 100%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+       
+    } */
+.reproductor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.reproductor iframe{
+  -webkit-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 13px 16px 5px 0px rgba(0,0,0,0.45);
+}
+
+/* ESTILOS PARA LOS BOTONES PARA CAMBIAR LOS VIDEOS */
+.botones-videos {
+    /* background-color: rgba(224, 69, 235, 0.7); */
+    background-color: #b969de89;
+    padding: 20px; 
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.botones-videos h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-wrapper {
+    text-align: center;
+    margin: 0 10px; 
+}
+
+.button-wrapper button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.button-wrapper img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+  }
+.button-wrapper p{
+  color: white;
+}
+
+/* Estilos para dispositivos móviles botones-videos*/
+@media screen and (max-width: 800px) {
+  .botones-videos {
+    padding: 10px; 
+  }
+
+  .botones-videos h2 {
+    font-size: 1.2rem; 
+  }
+
+  .buttons-container {
+    flex-direction: column;
+  }
+
+  .button-wrapper {
+    margin: 10px 0; 
+  }
+}
+  
 </style>
  

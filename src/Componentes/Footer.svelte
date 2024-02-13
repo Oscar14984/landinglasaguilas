@@ -91,5 +91,8 @@ footer {
     margin-top: 0; /* Elimina el margen superior predeterminado */
     margin-bottom: 10px; /* Agrega espacio inferior */
 }
+img{
+    margin-bottom: 30px;
+}
 
 </style>
