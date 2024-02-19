@@ -11,7 +11,9 @@ const pushTratamientos = () =>{
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="d-flex flex-row">
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la primera carta -->
                         <img src="banner/Protesis-total-dental.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -19,8 +21,9 @@ const pushTratamientos = () =>{
                             <p class="card-text">El Diseño de Sonrisa consiste en llevar los dientes a unas condiciones ideales de tamaño forma y color, según la cara, la personalidad y los rasgos específicos de cada paciente, se busca llevar a los dientes hasta un estado natural, altamente armónico y visualmente muy agradable.</p>
                         </div>
                     </div>
-    
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la segunda carta -->
                         <img src="banner/ortodoncias-dentales-v2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -28,8 +31,9 @@ const pushTratamientos = () =>{
                             <p class="card-text">Si tienes los dientes mal alineados, la solución es el tratamiento de Ortodoncia, dónde los dientes se colocan en su posición correcta. Existen brackets metálicos, estéticos, sin ligas e incluso sistemas totalmente transparentes.</p>
                         </div>
                     </div>
-    
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la tercera carta -->
                         <img src="banner/blanqueamiento-dental.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -43,7 +47,9 @@ const pushTratamientos = () =>{
             <!-- Repite el mismo patrón para las siguientes slides -->
             <div class="carousel-item">
                 <div class="d-flex flex-row">
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la cuarta carta -->
                         <img src="banner/implantologia-dental-v2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -51,8 +57,9 @@ const pushTratamientos = () =>{
                             <p class="card-text">El implante dental está recomendado para casos de pérdidas de dientes por enfermedad (enfermedad periodontal, caries, etc.), tras la pérdida dental debida a accidentes y en caso de ausencia congénita de dientes.</p>
                         </div>
                     </div>
-    
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la quinta carta -->
                         <img src="banner/protesis-dental-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -60,8 +67,9 @@ const pushTratamientos = () =>{
                             <p class="card-text"><strong>Prótesis Fijas, Prótesis Removibles</strong>. Las prótesis bucales permiten sustituir a los dientes y otras estructuras orales, con el restablecimiento de las funciones estéticas, fonéticas y masticatorias. </p>
                         </div>
                     </div>
-    
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la sexta carta -->
                         <img src="banner/carilla-porcelana-vm-750x500.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -75,7 +83,9 @@ const pushTratamientos = () =>{
             <!-- Repite el mismo patrón para las siguientes slides -->
             <div class="carousel-item">
                 <div class="d-flex flex-row">
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la cuarta carta -->
                         <img src="banner/resina-de-alta-estetica.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -83,8 +93,9 @@ const pushTratamientos = () =>{
                             <p class="card-text">Las resinas son del color del diente y se colocan en la superficie de los mismos igualando su apariencia natural, después de eliminar caries, fractura a restaurar, espacios entre los dientes, pequeñas imperfecciones, etc.</p>
                         </div>
                     </div>
-    
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la quinta carta -->
                         <img src="banner/endodoncia.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -92,8 +103,9 @@ const pushTratamientos = () =>{
                             <p class="card-text">La endodoncia sirve para conservar las piezas dentales sin la necesidad de recurrir a la extracción del diente, y es el último recurso para conservar aquellos dientes que tienen alguna afección en el nervio(pulpa) dental y su periferia.</p>
                         </div>
                     </div>
-    
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la sexta carta -->
                         <img src="banner/Cirugia-Maxilofacial.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -106,7 +118,9 @@ const pushTratamientos = () =>{
             <!-- Repite el mismo patrón para las siguientes slides -->
             <div class="carousel-item">
                 <div class="d-flex flex-row">
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la cuarta carta -->
                         <img src="banner/odontologia-infantil-clinica-dental.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -114,8 +128,9 @@ const pushTratamientos = () =>{
                             <p class="card-text">El cuidado de la dentadura infantil, es de vital importancia para conseguir una dentadura fuerte y sana.  Lo que se pretende es dar un tratamiento diferente, ya que sus dientes son aún muy sensibles</p>
                         </div>
                     </div>
-    
-                    <div class="card col-md-4">
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <div class="card col-md-4" on:click={()=>pushTratamientos()}>
                         <!-- Contenido de la quinta carta -->
                         <img src="banner/periodoncia-dental.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
