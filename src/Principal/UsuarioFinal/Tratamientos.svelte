@@ -1,5 +1,7 @@
 <script>
-
+const abrirWhats = () =>{
+        window.open('https://api.whatsapp.com/send/?phone=5215515101285&text=%C2%A1Hola%21+Quiero+agendar+una+Cita+de+Valoraci%C3%B3n+en+La+Cl%C3%ADnica+Dental+Coapa&type=phone_number&app_absent=0', '_blank');
+    }
 </script>
 
 <main class="container">
@@ -16,7 +18,7 @@
                         <p class="card-text">Los dientes más blancos son universalmente valorados tanto por hombres como por las mujeres. Desafortunadamente, no nacemos naturalmente con una sonrisa blanca perfecta. La verdad es que la mayoría de nosotros nacimos con dientes de color marfil que se vuelven más amarillos y oscuros a medida que envejecemos. Fumar, medicamentos o condiciones médicas, estilo de vida, alimentos y bebidas coloreadas también contribuyen a la tinción y decoloración de nuestros dientes.</p>
                     </div>
                     <div class="btn-trata">
-                        <button class="btn btn-tra ">
+                        <button class="btn btn-tra " on:click={abrirWhats}>
                           <i class="bi bi-whatsapp"></i>
                           Agenda tu Primera Cita Gratis
                         </button>
@@ -38,7 +40,7 @@
                             Los implantes dentales son tornillos de titanio que se colocan quirúrgicamente en los huesos maxilares, debajo de la encía, con la finalidad de recuperar dientes perdidos, o dar un soporte adicional a las prótesis removibles.</p>
                     </div>
                     <div class="btn-trata">
-                        <button class="btn btn-tra ">
+                        <button class="btn btn-tra " on:click={abrirWhats}>
                           <i class="bi bi-whatsapp"></i>
                           Agenda tu Primera Cita Gratis
                         </button>
@@ -58,7 +60,7 @@
                         <p class="card-text">Los terceros molares, comúnmente llamados “muelas del juicio”, pueden permanecer en boca siempre y cuando se encuentren correctamente posicionadas. Desgraciadamente, esto no sucede en la mayoría de los casos, y surgen problemas que ocasionan que se tengan que extraer. ¿Crees que en menos de media hora sería posible extraer los cuatro terceros molares? En La Clínica Dental si, ya que contamos con los mejores especialistas en el área, así que no lo pospongas más y ¡ven a visitarnos!</p>
                     </div>
                     <div class="btn-trata">
-                        <button class="btn btn-tra ">
+                        <button class="btn btn-tra " on:click={abrirWhats}>
                           <i class="bi bi-whatsapp"></i>
                           Agenda tu Primera Cita Gratis
                         </button>
@@ -80,7 +82,7 @@
                             Si has notado que de repente te duele un diente cuando tomas líquidos frías o muy calientes, cuando estas acostado, cuando masticas y que el diente te punza, entonces, puedes necesitar de un tratamiento de conductos o endodoncia. Para eso, debemos quitar el nervio infectado por las caries, para que así te deje de doler. Debes apresurarte, ya que en cualquier momento el dolor se puede tornar insoportable. Llámanos, no importa la hora ni el día. ¡Lo importante es que te sientas bien!</p>
                     </div>
                     <div class="btn-trata">
-                        <button class="btn btn-tra ">
+                        <button class="btn btn-tra " on:click={abrirWhats}>
                           <i class="bi bi-whatsapp"></i>
                           Agenda tu Primera Cita Gratis
                         </button>
@@ -106,7 +108,7 @@
                             Recuerda que tu sonrisa ¡Es tu mejor carta de presentación!</p>
                     </div>
                     <div class="btn-trata">
-                        <button class="btn btn-tra ">
+                        <button class="btn btn-tra " on:click={abrirWhats}>
                           <i class="bi bi-whatsapp"></i>
                           Agenda tu Primera Cita Gratis
                         </button>
@@ -128,7 +130,7 @@
                             Si tienes los dientes desalineados, la solución es el tratamiento de ortodoncia; en dónde los dientes se colocan en su posición adecuada, para así lograr su correcta función y como consecuencia, dientes perfectamente bien alineados. Existen varios tipos de tratamientos de ortodoncia, tales como: brackets metálicos, estéticos, sin ligas e incluso sistemas totalmente transparentes.</p>
                     </div>
                     <div class="btn-trata">
-                        <button class="btn btn-tra ">
+                        <button class="btn btn-tra " on:click={abrirWhats}>
                           <i class="bi bi-whatsapp"></i>
                           Agenda tu Primera Cita Gratis
                         </button>
@@ -153,7 +155,7 @@
                             No te preocupes, en La Clínica Dental tenemos la solución para ti, solo es cuestión de que nos podamos conocer y entonces sí, poder darte la mejor opción de tratamiento.</p>
                     </div>
                     <div class="btn-trata">
-                        <button class="btn btn-tra ">
+                        <button class="btn btn-tra " on:click={abrirWhats}>
                           <i class="bi bi-whatsapp"></i>
                           Agenda tu Primera Cita Gratis
                         </button>
@@ -179,7 +181,7 @@
                             El objetivo básico de una prótesis es recuperar la funcionalidad y estética de la boca del paciente. Los especialistas en Cirugía Maxilofacial de La Clínica Dental pone a tu disposición una variedad de prótesis:</p>
                     </div>
                     <div class="btn-trata">
-                        <button class="btn btn-tra ">
+                        <button class="btn btn-tra " on:click={abrirWhats}>
                           <i class="bi bi-whatsapp"></i>
                           Agenda tu Primera Cita Gratis
                         </button>
@@ -201,7 +203,7 @@
                             Las resinas de alta estética son del color del diente y se colocan en la superficie de los mismos para igualar su apariencia natural. Esto se hace después de eliminar algunas caries, fracturas que haya que restaurar; espacios entre los dientes y pequeñas imperfecciones, diente pequeño. En La Clínica Dental, utilizamos resinas de alta estética y de la más alta calidad, para lograr que sea imperceptible y poder lucir una sonrisa brillante.</p>
                     </div>
                     <div class="btn-trata">
-                        <button class="btn btn-tra ">
+                        <button class="btn btn-tra " on:click={abrirWhats}>
                           <i class="bi bi-whatsapp"></i>
                           Agenda tu Primera Cita Gratis
                         </button>
@@ -226,7 +228,7 @@
                             Sabemos que te puede causar cierta preocupación la atención a tus chiquitos, por lo que en La Clínica Dental contamos con un ambiente donde tu hijo podrá estar tranquilo, jugar y divertirse.</p>
                     </div>
                     <div class="btn-trata">
-                        <button class="btn btn-tra ">
+                        <button class="btn btn-tra " on:click={abrirWhats}>
                           <i class="bi bi-whatsapp"></i>
                           Agenda tu Primera Cita Gratis
                         </button>

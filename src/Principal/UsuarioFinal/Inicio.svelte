@@ -459,6 +459,7 @@ const videos = [
   padding: 10px;
   background: linear-gradient(to left, #5EBCD6, white); 
   margin-bottom: 60px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,.1);
 }
 
 .ren-son{
