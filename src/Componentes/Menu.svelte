@@ -1,19 +1,24 @@
 <script>
 	import Inicio from './../Principal/UsuarioFinal/Inicio.svelte';
-  import {link} from 'svelte-spa-router'
+  import {link, push} from 'svelte-spa-router'
+
   const llamar = () => {
         window.location.href = 'tel:5589003683';
     }
     const abrirWhats = () =>{
         window.open('https://api.whatsapp.com/send/?phone=5215515101285&text=%C2%A1Hola%21+Quiero+agendar+una+Cita+de+Valoraci%C3%B3n+en+La+Cl%C3%ADnica+Dental+Coapa&type=phone_number&app_absent=0', '_blank');
     }
-
+  const inicio = () =>{
+    push('/')
+  }
 </script>
 
 <main>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <img src="logos/Logo Horizontal[46].jpeg" alt="">
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+          <img src="logos/Logo Horizontal[46].jpeg" alt="" on:click={inicio}>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -53,6 +58,9 @@
 </main>
 
 <style>
+  img{
+    cursor: pointer;
+  }
     /* COLOR QUE SE USA EN lCD #5EBCD6 */
     .agenda{
         background-color:#5EBCD6;

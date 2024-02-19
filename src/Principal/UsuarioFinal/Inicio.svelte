@@ -30,6 +30,9 @@ const videos = [
     const llamar = () => {
         window.location.href = 'tel:5589003683';
     }
+    const enviarCorreo = () => {
+        window.location.href = 'mailto:contacto@laclinicalasaguilas.dental';
+    }
     const abrirMapa = () =>{
         window.open('https://maps.app.goo.gl/wywR2HvX8uDz5TwQ9', '_blank');
     }
@@ -244,7 +247,9 @@ const videos = [
           </div>
         </div>
         <div class="col-12 col-sm-3 logo-llamada">
-          <img src="logos/logo-escriben.png" alt="">
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+            <img src="logos/logo-escriben.png" alt="" on:click={enviarCorreo}>
           <div class="contenido-contactos">
             <p>Escribenos</p>
             <p class="contacto-email">contacto@laclinicalasaguilas.dental</p>
@@ -640,6 +645,10 @@ textarea.form-control {
     align-items: center; 
     text-align: center;
   }
+}
+
+.contactos img{
+  cursor: pointer;
 }
 
 /* ESTILOS PARA EL AJUSTE DEL VIDEO */
