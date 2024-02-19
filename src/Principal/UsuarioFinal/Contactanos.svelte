@@ -52,7 +52,7 @@ let horas = "9:00AM - 7:00PM"
 .contacto-principal{
     text-align: center;
     padding: 50px 50px;
-    background-image: url(img/fondo.jpg);
+    background-image: url(/img/fondo.jpg);
     background-size: 70%;
     background-repeat: no-repeat; 
     background-position: center top ; 
