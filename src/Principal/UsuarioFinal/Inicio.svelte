@@ -504,12 +504,12 @@ const videos = [
   margin-left: 35px;
 }
 .map-forms h1{
-  /* margin-left: 150px; */
+  margin-left: 0px;
   border-bottom: #E045EB 2px solid;
   width: 360px;
 }
 .map-forms h3{
-  /* margin-left: 150px; */
+  margin-left: 0px;
 }
 
 .forms {
