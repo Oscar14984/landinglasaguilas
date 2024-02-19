@@ -1,7 +1,12 @@
 <script>
 	import Inicio from './../Principal/UsuarioFinal/Inicio.svelte';
   import {link} from 'svelte-spa-router'
- 
+  const llamar = () => {
+        window.location.href = 'tel:5589003683';
+    }
+    const abrirWhats = () =>{
+        window.open('https://api.whatsapp.com/send/?phone=5215515101285&text=%C2%A1Hola%21+Quiero+agendar+una+Cita+de+Valoraci%C3%B3n+en+La+Cl%C3%ADnica+Dental+Coapa&type=phone_number&app_absent=0', '_blank');
+    }
 
 </script>
 
@@ -34,11 +39,11 @@
               </li>
               
             </ul>
-            <button class="btn agenda">
+            <button class="btn agenda" on:click={abrirWhats}>
                 <i class="bi bi-whatsapp"></i>
                 Agenda tu Primera Cita Gratis
             </button>
-            <button class="btn llamada">
+            <button class="btn llamada"  on:click={llamar}>
                 <i class="bi bi-telephone"></i>
                 Llámanos
             </button>

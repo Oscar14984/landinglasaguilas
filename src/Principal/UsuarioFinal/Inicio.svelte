@@ -1,5 +1,7 @@
 <script>
-	import Contactanos from './Contactanos.svelte';
+	import { push, link} from 'svelte-spa-router';
+
+import Contactanos from './Contactanos.svelte';
 import Banners from "../../Banners/Banners.svelte";
 import BannerTratamiento from "../../Banners/BannerTratamiento.svelte";
 import BannerEquiDoc from "../../Banners/BannerEquiDoc.svelte";
@@ -24,12 +26,22 @@ const videos = [
   const cambiarVideo = (nuevoVideoId) => {
     videoId = nuevoVideoId;
   }
+
+    const llamar = () => {
+        window.location.href = 'tel:5589003683';
+    }
+    const abrirMapa = () =>{
+        window.open('https://maps.app.goo.gl/wywR2HvX8uDz5TwQ9', '_blank');
+    }
+    const abrirWhats = () =>{
+        window.open('https://api.whatsapp.com/send/?phone=5215515101285&text=%C2%A1Hola%21+Quiero+agendar+una+Cita+de+Valoraci%C3%B3n+en+La+Cl%C3%ADnica+Dental+Coapa&type=phone_number&app_absent=0', '_blank');
+    }
 </script>
 <main class="container">
   <!-- BANNRS DEL PRINCIPIO DE PAGINA -->
     <Banners />
     <br>
-    <button class="btn btn-agenda">
+    <button class="btn btn-agenda" on:click={abrirWhats}>
       <i class="bi bi-whatsapp"></i>
       Agenda tu Primera Cita Gratis
     </button>
@@ -79,7 +91,7 @@ const videos = [
         <p style="font-size: 20px;">Pregunta por las promociones especiales que tenemos para los jóvenes de entre 16 a 28 años.</p>
       </div>
       <div class="btn-promocion">
-        <button class="btn btn-pro ">
+        <button class="btn btn-pro " on:click={abrirWhats}>
           <i class="bi bi-whatsapp"></i>
           Agenda tu Primera Cita Gratis
         </button>
@@ -120,7 +132,7 @@ const videos = [
     <!--  DIV DE SEPARACION CON RENUEVA TU SONRISA -->
     <div class="renueva">
       <h2 class="ren-son">¡RENUEVA TU SONRISA HOY!</h2>
-      <button class="btn btn-pro ">
+      <button class="btn btn-pro " on:click={abrirWhats}>
         <i class="bi bi-whatsapp"></i>
         Agenda tu Primera Cita Gratis
       </button>
@@ -139,7 +151,7 @@ const videos = [
         <p>En nuestra clínica dental, estamos comprometidos a brindarte una sonrisa saludable y radiante. Con un ambiente cálido y acogedor, te ofrecemos un cuidado dental excepcional para que te sientas bienvenido y cómodo durante tu visita.</p>
 
         <div class="boton-insta">
-          <button class="btn btn-insta ">
+          <button class="btn btn-insta " on:click={abrirWhats}>
             <i class="bi bi-whatsapp"></i>
             Agenda tu Primera Cita Gratis
           </button>
@@ -205,14 +217,20 @@ const videos = [
       <!-- <img src="img/informacion.png" alt=""> -->
       <div class="row">
         <div class="col-12 col-sm-3 logo-llamada">
-          <img src="logos/logo-llamada.png" alt="">
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+          <img src="logos/logo-llamada.png" alt="" on:click={llamar}>
           <div class="contenido-contactos">
             <p>Llámanos</p>
             <p>5589003683</p>
           </div>
         </div>
         <div class="col-12 col-sm-3 logo-llamada">
-          <img src="logos/logo-ubicacion.png" alt="">
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+          <button class="btn btn-abrirMapa" on:click={()=> abrirMapa()}>
+            <img src="logos/logo-ubicacion.png" alt="" >
+          </button>
           <div class="contenido-contactos">
             <p>Dónde Estamos</p>
             <p>Google Maps</p>
@@ -607,7 +625,9 @@ textarea.form-control {
   margin-top: 60px;
   margin-bottom: 30px;
 }
-
+.btn-abrirMapa img{
+  margin-bottom: 30%;
+}
 .logo-llamada{
   display: grid;
   grid-template-columns: 1fr 1fr;
