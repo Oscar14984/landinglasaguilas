@@ -193,7 +193,7 @@ const videos = [
             <textarea class="form-control" id="mensaje" rows="3"></textarea>
           </div>
         </div>
-        <button class="btn btn-success">Enviar</button>
+        <button class="btn btn-success btn-enviar">Enviar</button>
       </div>
       <div id="map">
         <Mapa />
@@ -265,15 +265,15 @@ const videos = [
   }
   @media screen and (max-width: 768px) {
     .tratamientos h1 {
-        font-size: 32px; /* Reducir el tamaño del título en pantallas pequeñas */
+        font-size: 32px; 
     }
 
     .tratamientos h2 {
-        width: 90%; /* Ajustar el ancho del subtitulo para que sea más largo en pantallas pequeñas */
+        width: 90%; 
     }
 
     .tratamientos p {
-        font-size: 16px; /* Reducir el tamaño del texto en pantallas pequeñas */
+        font-size: 16px; 
     }
 }
   /* @media screen and (min-width: 960px) {
@@ -403,7 +403,7 @@ const videos = [
 
     .img-bienvenida {
         margin-right: 0; 
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 
     .iconos {
@@ -547,7 +547,9 @@ textarea.form-control {
   display: flex;
   justify-content: space-between;
 }
-
+.btn-enviar{
+  margin-left: 10%;
+}
 
 /* mapa */
 #map { height: 500px; }

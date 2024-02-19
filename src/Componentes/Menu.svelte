@@ -63,7 +63,7 @@
 
     /* HOVER DEL nav-item a */
   .navbar-nav{
-    margin-left: 20%;
+    margin-left: 27%;
   }
   .navbar-nav .nav-item.active a,
   .navbar-nav .nav-item:hover a {
@@ -83,8 +83,9 @@
   }
   /* Estilos para el logo en la barra de navegación */
 .navbar img {
-  max-width: 100%; 
-  height: auto; 
+  /* max-width: 100%;  */
+  /* height: auto;  */
+  width: 15%;
   margin-right: 10px; 
 }
 
