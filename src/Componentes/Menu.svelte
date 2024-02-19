@@ -58,10 +58,10 @@
         background-color:#5EBCD6; 
         color: white;
     }
-
-   
-
-    /* HOVER DEL nav-item a */
+.nav-item a{
+  color: #dc0beb;
+}
+  /* HOVER DEL nav-item a */
   .navbar-nav{
     margin-left: 27%;
   }
