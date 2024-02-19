@@ -592,7 +592,7 @@ textarea.form-control {
 }
 
 /* mapa */
-#map { height: 560px; }
+#map { height: 566px; }
 
 @media screen and (max-width: 767px) {
   .map-forms {
