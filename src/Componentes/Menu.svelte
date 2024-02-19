@@ -62,10 +62,13 @@
    
 
     /* HOVER DEL nav-item a */
-    .navbar-nav .nav-item.active a,
+  .navbar-nav{
+    margin-left: 20%;
+  }
+  .navbar-nav .nav-item.active a,
   .navbar-nav .nav-item:hover a {
-    color: #5EBCD6; /* Color de texto al seleccionar o pasar el ratón por encima */
-    border-bottom: 2px solid #5EBCD6; /* Borde inferior al seleccionar o pasar el ratón por encima */
+    color: #5EBCD6; 
+    border-bottom: 2px solid #5EBCD6; 
   }
 
   .navbar-expand-lg{

@@ -61,7 +61,7 @@ const videos = [
 
 <!-- DIV PARA LOS BOTONES DE SELECCION DE VIDEOS -->
 <div class="botones-videos">
-  <h2>TRATAMIENTOS</h2>
+  <h2>VIDEOS DE TRATAMIENTOS</h2>
   <div class="buttons-container">
       {#each videos as video}
       <div class="button-wrapper">
