@@ -197,5 +197,8 @@ h5{
     }
 }
 
-
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
 </style>
