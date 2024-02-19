@@ -8,7 +8,7 @@
 <main>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <img src="img/logo-la-clinica-dental-oscuro.png" alt="">
+          <img src="logos/Logo Horizontal[46].jpeg" alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

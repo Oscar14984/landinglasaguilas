@@ -25,7 +25,6 @@ const videos = [
     videoId = nuevoVideoId;
   }
 </script>
-
 <main class="container">
   <!-- BANNRS DEL PRINCIPIO DE PAGINA -->
     <Banners />
@@ -242,7 +241,23 @@ const videos = [
   .btn-agenda{
     background-color:#5EBCD6;
     color: white;
-    margin-left: 10%;
+    margin-left: 35%;
+    padding: 5px 100px 5px 100px;
+  }
+  .btn-agenda:hover
+  {animation:shadow-drop-center 0.4s linear both} 
+  @keyframes shadow-drop-center
+  {
+    0%{box-shadow:0 0 0 0 transparent}
+    100%{box-shadow:0 0 20px 0 rgba(10, 46, 54, 0.55)}
+  }
+
+  @media  (max-width:768px) {
+    .btn-agenda{
+      margin-left: 15%;
+    padding: 5px 10px 5px 10px;
+    }
+    
   }
   /* PARA LOS ESTILOS DEL TRATAMIENTOS */
   .tratamientos{

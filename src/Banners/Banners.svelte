@@ -28,13 +28,13 @@
 
 <style>
 .slide{
-  max-width: 80%; /* Ajusta el valor según tus necesidades */
+  max-width: 80%; 
   margin: auto;
 }
 
 @media screen and (max-width: 768px) {
   .slide {
-    max-width: 90%; /* Reducir el ancho máximo del carrusel en pantallas pequeñas */
+    max-width: 100%; 
   }
 }
 </style>
