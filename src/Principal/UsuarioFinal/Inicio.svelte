@@ -654,6 +654,15 @@ textarea.form-control {
     background: none;
     cursor: pointer;
 }
+
+
+.button-wrapper button:hover 
+{animation:rotate-scale-up 0.4s linear both} 
+@keyframes rotate-scale-up{
+  0%{transform:scale(1) rotateZ(0)}
+  50%{transform:scale(2) rotateZ(180deg)}
+  100%{transform:scale(1) rotateZ(360deg)}
+}
 .button-wrapper img {
     width: 100px; 
     height: 100px; 
