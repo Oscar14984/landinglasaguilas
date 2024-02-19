@@ -1,5 +1,9 @@
 <script>
+import {push} from 'svelte-spa-router'
 
+const pushTratamientos = () =>{
+    push('/Tratamientos')
+}
 </script>
 
 <main>

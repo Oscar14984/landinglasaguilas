@@ -504,12 +504,12 @@ const videos = [
   margin-left: 35px;
 }
 .map-forms h1{
-  margin-left: 150px;
+  /* margin-left: 150px; */
   border-bottom: #E045EB 2px solid;
   width: 360px;
 }
 .map-forms h3{
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 .forms {
@@ -548,11 +548,13 @@ textarea.form-control {
   justify-content: space-between;
 }
 .btn-enviar{
-  margin-left: 10%;
+  margin-top: 1%;
+  margin-left: 35%;
+  width: 30%;
 }
 
 /* mapa */
-#map { height: 500px; }
+#map { height: 560px; }
 
 @media screen and (max-width: 767px) {
   .map-forms {
