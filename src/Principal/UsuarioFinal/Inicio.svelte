@@ -372,7 +372,8 @@ const videos = [
 .promocion {
   display: grid;
   grid-template-columns: auto auto; 
-  gap: 20px; 
+  gap: 20px;
+  margin: 10px 100px 50px 100px;
 }
 
 .btn-promocion {
@@ -383,6 +384,7 @@ const videos = [
 @media screen and (max-width: 768px) {
     .promocion {
         grid-template-columns: 1fr; 
+        margin: 10px 10px 50px 10px;
     }
 
     .btn-promocion {
@@ -395,6 +397,7 @@ const videos = [
 .bienvenida {
   display: flex;
   margin-bottom: 50px;
+  margin: 10px 100px 50px 100px;
 }
 .bienvenida h2::after{
   content: "";
@@ -436,7 +439,8 @@ const videos = [
 @media screen and (max-width: 767px) { 
     .bienvenida {
         flex-direction: column; 
-        align-items: center; 
+        align-items: center;
+        margin: 10px 10px 50px 10px; 
     }
 
     .img-bienvenida {
@@ -460,6 +464,7 @@ const videos = [
   background: linear-gradient(to left, #5EBCD6, white); 
   margin-bottom: 60px;
   box-shadow: 0px 5px 15px rgba(0,0,0,.1);
+  margin: 10px 100px 50px 100px;
 }
 
 .ren-son{
@@ -471,6 +476,9 @@ const videos = [
         margin-right: 0; 
         margin-bottom: 20px;
     }
+    .renueva{
+      margin: 10px 10px 50px 10px;
+    }
 }
 
 /* ESTILO DE LA INSTALACION */
@@ -480,6 +488,7 @@ const videos = [
   align-items: center; 
   margin-bottom: 80px;
   margin-left: 30px; 
+  margin: 10px 100px 50px 100px;
 }
 .instalaciones h2::after {
   content: "";
@@ -521,6 +530,7 @@ const videos = [
         flex-direction: column-reverse; 
         align-items: center; 
         margin-left: 0; 
+        margin: 10px 10px 50px 10px;
     }
 
     .contenido-insta {
@@ -541,6 +551,7 @@ const videos = [
 .map-forms {
   display: flex;
   margin-left: 35px;
+  margin: 10px 100px 50px 100px;
 }
 .map-forms h1{
   margin-left: 0px;
@@ -593,12 +604,16 @@ textarea.form-control {
 }
 
 /* mapa */
-#map { height: 566px; }
-
+#map {
+    height: 566px; 
+    position: relative;
+    z-index: 0; 
+  }
 @media screen and (max-width: 767px) {
   .map-forms {
     flex-direction: column;
     margin-left: 0;
+    margin: 10px 10px 50px 10px;
   }
   .map-forms h1 {
     margin-left: 0;
@@ -676,8 +691,9 @@ textarea.form-control {
     /* background-color: rgba(224, 69, 235, 0.7); */
     background-color: #b969de89;
     padding: 20px; 
-    margin-bottom: 50px;
-    margin-top: 10px;
+    /* margin-bottom: 50px;
+    margin-top: 10px; */
+    margin: 10px 100px 50px 100px;
 }
 
 .botones-videos h2 {
@@ -723,7 +739,8 @@ textarea.form-control {
 /* Estilos para dispositivos móviles botones-videos*/
 @media screen and (max-width: 800px) {
   .botones-videos {
-    padding: 10px; 
+    padding: 10px;
+    margin: 10px 10px 50px 10px; 
   }
 
   .botones-videos h2 {

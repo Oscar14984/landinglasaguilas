@@ -61,16 +61,21 @@
   img{
     cursor: pointer;
   }
-    /* COLOR QUE SE USA EN lCD #5EBCD6 */
-    .agenda{
-        background-color:#5EBCD6;
-        color: white;
-        margin-right: 10px;
-    }
-    .llamada{
-        background-color:#5EBCD6; 
-        color: white;
-    }
+/* COLOR QUE SE USA EN lCD #5EBCD6 */
+.agenda {
+  background-color: #5EBCD6;
+  color: white;
+  margin-right: 5px; 
+  font-size: 14px; 
+  padding: 5px 10px; 
+}
+
+.llamada {
+  background-color: #5EBCD6;
+  color: white;
+  font-size: 14px; 
+  padding: 5px 3px; 
+}
 .nav-item a{
   color: #dc0beb;
 }
